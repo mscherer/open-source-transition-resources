@@ -5,7 +5,7 @@ COPY . /var/www/html/
 WORKDIR /var/www/html/
 RUN ./publish.sh
 
-RUN hugo
+RUN cd website && hugo
 EXPOSE 8080
 USER 1000
 EXEC /usr/bin/nginx 
