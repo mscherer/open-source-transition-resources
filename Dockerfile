@@ -1,7 +1,7 @@
 FROM fedora:33
-USER 1000
-RUN dnf install -y nginx hugo rubygem-asciidoctor-pdf && dnf clean all
+RUN dnf install -y nginx hugo rubygem-asciidoctor-pdf && dnf clean all -y
 
+USER 1000
 RUN ./publish.sh
 
 RUN hugo
