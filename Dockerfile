@@ -8,4 +8,4 @@ RUN ./publish.sh
 RUN cd website && hugo
 EXPOSE 8080
 USER 1000
-ENTRYPOINT ['/usr/bin/nginx']
+ENTRYPOINT ['/usr/sbin/nginx']
